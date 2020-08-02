@@ -1,0 +1,90 @@
+body{
+	background-image: url(pexels-donald-tong-189296.jpg);
+	height:100%;
+	
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #F4F1F1;
+  margin : 0px;
+  box-shadow: 0,0,0,1;
+
+
+}
+.subnav {
+  float: right;
+  overflow: hidden;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  
+  font-family: "Lucida Console", Courier, monospace;;
+  font-size: 16px;
+  color: black ;
+  font-weight: normal;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: right;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+	display :vertical block;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 20px;
+  background-color: "Lucida Console", Courier, monospace;;
+  font-family: "Lucida Console", Courier, monospace;;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #373333;
+  color:silver;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left:40%;
+  width:auto;
+  
+  color: white ;
+  background-color: black;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
